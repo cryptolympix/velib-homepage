@@ -200,6 +200,11 @@ footer .thick-line + .block .download a {
   border-radius: 50px;
 }
 
+footer .thick-line + .block .download a:hover {
+  color: var(--light-blue);
+  background-color: white;
+}
+
 footer .contact {
   display: flex;
   flex-direction: row;

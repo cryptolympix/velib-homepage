@@ -1,0 +1,113 @@
+@import url('./variables.css');
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  --slides-count: 3; /* Number of slides */
+}
+
+.carousel .arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .arrows > .arrow {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  filter: opacity(40%) sepia(20%);
+  border-radius: 25px;
+  margin: 0px 20px;
+  z-index: 5;
+}
+
+.carousel .arrows > .arrow:hover {
+  cursor: pointer;
+}
+
+.carousel .left-arrow,
+.carousel .right-arrow {
+  width: 25px;
+  height: 25px;
+  background-image: url('../../assets/arrow.png');
+  background-size: cover;
+  filter: invert(100%);
+}
+
+.carousel .right-arrow {
+  transform: rotate(180deg);
+}
+
+.carousel .slides {
+  display: flex;
+  position: relative;
+  width: calc(var(--slides-count) * 100%);
+  height: auto;
+  left: 0;
+  padding-left: 0;
+}
+
+.carousel .slides > .slide {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .slides > .slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.carousel .slides > .slide > .slide-content {
+  /* background-color: darkgoldenrod; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 33.33%;
+  height: 100%;
+  top: 0;
+}
+
+.carousel .slides > .slide p {
+  font-family: Nunito, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.carousel .slides > .slide a {
+  text-decoration: none;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  background-color: var(--green);
+}
+
+@media screen and (max-width: 600px) {
+  .carousel .slides > .slide p {
+    font-size: 20px;
+  }
+  .carousel .slides > .slide a {
+    padding: 10px;
+  }
+}

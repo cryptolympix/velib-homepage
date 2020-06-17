@@ -1,0 +1,146 @@
+@import url('./variables.css');
+
+#banners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 40px 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  #banners-container {
+    padding-top: 40px;
+  }
+}
+
+.banners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1300px;
+}
+
+@media screen and (max-width: 660px) {
+  .banners {
+    width: 85%;
+  }
+  /* Change the order of the flex items */
+  .banner:nth-child(1) {
+    order: 2;
+  }
+  .banner:nth-child(2) {
+    order: 3;
+  }
+  .banner:nth-child(3) {
+    order: 1;
+  }
+}
+
+.banner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 300px;
+  min-width: 300px;
+  min-height: 350px;
+  margin: 20px 15px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1300px) {
+  .banner:first-of-type {
+    margin-left: 0;
+  }
+  .banner:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  min-width: 250px;
+  min-height: 280px;
+}
+
+@media screen and (min-width: 661px) and (max-width: 1050px) {
+  .banner:last-of-type {
+    max-width: 48%;
+    min-width: 48%;
+  }
+}
+
+.banner-blue {
+  background-color: var(--light-blue);
+}
+
+.banner * {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.banner h2 {
+  font-family: Cambria, sans-serif;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 26px;
+}
+
+.banner h4 {
+  font-family: Nunito, sans-serif;
+  font-size: 24px;
+}
+
+.banner p {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 6px 20px;
+}
+
+.banner-button {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+
+.banner:not(.banner-blue) h2,
+.banner:not(.banner-blue) h4,
+.banner:not(.banner-blue) p {
+  color: var(--grey);
+}
+
+.banner:not(.banner-blue) .banner-button {
+  color: white;
+  background-color: var(--green);
+}
+
+.banner:not(.banner-blue) .banner-button:hover {
+  background-color: var(--light-green);
+}
+
+.banner-blue h2,
+.banner-blue h4,
+.banner-blue p {
+  color: white;
+}
+
+.banner-blue .banner-button {
+  color: white;
+  background-color: var(--blue);
+}
+
+.banner-blue .banner-button:hover {
+  background-color: white;
+  color: var(--blue);
+}

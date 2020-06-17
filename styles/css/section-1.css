@@ -1,0 +1,128 @@
+@import url('./variables.css');
+
+#section-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  /* background-color: yellow; */
+}
+
+#section-1 .blocks {
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-1 .block {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#section-1 .block:last-child {
+  margin-right: 0;
+}
+
+#section-1 .block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: auto;
+  min-width: 280px;
+  min-height: 250px;
+  text-align: center;
+}
+
+@media screen and (max-width: 639px) {
+  #section-1 .block-content {
+    justify-content: center;
+  }
+
+  #section-1 .block-content p {
+    padding: 5px 0px 25px 0px;
+  }
+
+  #section-1 .block:nth-of-type(1) {
+    margin-bottom: 0;
+  }
+
+  #section-1 .block:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+
+#section-1 .block-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-1 .block-title img {
+  width: 56px;
+  height: 56px;
+}
+
+@media screen and (max-width: 1080px) {
+  #section-1 .block:last-child {
+    display: none;
+  }
+  #section-1 .block:nth-of-type(2) {
+    margin-right: 0;
+  }
+}
+
+#section-1 .block h3 {
+  font-family: Nunito, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  margin-left: 8px;
+}
+
+#section-1 .block p {
+  font-family: Nunito, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  color: var(--grey);
+  margin: 10px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  #section-1 .block p {
+    margin: 0;
+  }
+}
+
+#section-1 .block a {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  color: white;
+  background-color: var(--green);
+}
+
+#section-1 .block a:hover {
+  background-color: var(--light-green);
+}
+
+#section-1 .block-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

@@ -53,7 +53,6 @@
 }
 
 #section-4 .carousel + p {
-  font-family: Nunito, sans-serif;
   font-size: 16px;
   color: black;
   margin: 20px;
@@ -61,7 +60,6 @@
 
 #section-4 .block:last-child p {
   margin: 40px 0px;
-  font-family: Nunito, sans-serif;
   font-size: 16px;
   color: black;
   min-width: 150px;
@@ -69,7 +67,6 @@
 
 #section-4 .carousel + p a,
 #section-4 .block:last-child p a {
-  font-family: Nunito, sans-serif;
   font-size: 16px;
   color: black;
 }

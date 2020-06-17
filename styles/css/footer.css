@@ -68,9 +68,7 @@ footer .large-filled-button {
   height: 120px;
   margin: 30px 20px;
   padding: 10px;
-  text-decoration: none;
   color: white;
-  font-family: Nunito, sans-serif;
   font-weight: 400;
   line-height: 28px;
   font-size: 20.8px;
@@ -97,7 +95,6 @@ footer h5,
 footer p,
 footer a {
   color: white;
-  font-family: Nunito, sans-serif;
   text-align: center;
 }
 
@@ -136,7 +133,6 @@ footer .informations .block:last-child .transparent-button:first-child {
 }
 
 footer .transparent-button {
-  text-decoration: none;
   background-color: var(--blue);
   padding: 16px;
   border: solid 1px white;
@@ -183,14 +179,12 @@ footer .thick-line + .block .download p {
 }
 
 footer .thick-line + .block .download .os-buttons {
-  list-style: none;
   display: flex;
   flex-direction: row;
   width: auto;
 }
 
 footer .thick-line + .block .download a {
-  text-decoration: none;
   line-height: 24px;
   font-size: 16px;
   font-weight: 700;
@@ -246,12 +240,15 @@ footer .contact .block-content {
 footer .contact ul {
   display: flex;
   flex-direction: row;
-  list-style: none;
   flex-wrap: wrap;
 }
 
 footer .contact li {
   margin: 0px 10px;
+}
+
+footer .contact ul a {
+  text-decoration: underline;
 }
 
 footer .contact ul a:hover {

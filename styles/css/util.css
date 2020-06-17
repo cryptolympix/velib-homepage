@@ -1,0 +1,17 @@
+@import url('./variables.css');
+
+.green {
+  color: var(--light-green);
+}
+
+.blue {
+  color: var(--light-blue);
+}
+
+.thin-line {
+  height: 1px;
+}
+
+.thick-line {
+  height: 2px;
+}

@@ -67,6 +67,7 @@
 
 #section-4 .carousel + p a,
 #section-4 .block:last-child p a {
+  text-decoration: underline;
   font-size: 16px;
   color: black;
 }

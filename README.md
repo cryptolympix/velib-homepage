@@ -2,6 +2,6 @@
 
 A clone of the homepage of the Velib 'site.
 
-# Link
+# Demo
 
-https://maximejoly.yj.fr/velib-homepage/
+https://velib-homepage.netlify.app
